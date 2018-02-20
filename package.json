@@ -1,6 +1,6 @@
 {
   "name": "setup-config",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Sets up ESlint and Prettier with some sensible defaults",
   "author": "Deric Cain <deric.cain@gmail.com>",
   "license": "MIT",
