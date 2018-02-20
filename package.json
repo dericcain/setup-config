@@ -1,0 +1,36 @@
+{
+  "name": "setup-config",
+  "version": "0.1.0",
+  "description": "Sets up ESlint and Prettier with some sensible defaults",
+  "author": "Deric Cain <deric.cain@gmail.com>",
+  "license": "MIT",
+  "main": "src/cli.js",
+  "keywords": [
+    "eslint",
+    "prettier",
+    "format",
+    "setup"
+  ],
+  "bin": {
+    "setup-config": "./src/cli.js"
+  },
+  "dependencies": {
+    "babel-eslint": "^8.2.2",
+    "commander": "^2.14.1",
+    "eslint": "^4.18.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.10.2"
+  },
+  "peerDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.10.2"
+  }
+}
