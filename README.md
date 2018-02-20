@@ -7,7 +7,7 @@ uses Prettier for formatting.
 #### Install
 `npx setup-config setup`
     
-`npx` allows you to use the command without installing it locally.
+`npx` allows you to use the command without installing it locally, which is the preferred method.
 
 or you can just install as a dev dependency like so...
 
@@ -29,10 +29,29 @@ setup-config setup -p
 setup-config setup --no-prettier
 ```
 
+Want to remove the config files?
+```
+setup-config remove
+
+# or
+
+setup-config rm
+```
+
+> `remove` does not remove the entries in your `package.json`, so if you want to remove those, then
+> you must manually do that.
+
 Need help?
 
 ```
 setup-config --help
+```
+
+##### All `npx` commands
+```
+npx setup-config setup
+npx setup-config setup -p    # without Prettier
+npx setup-config remove      # removes conig files
 ```
 
 #### Config files
@@ -95,6 +114,16 @@ module.exports = {
   trailingComma: 'es5',
   arrowParens: 'avoid',
 };
+```
+
+When you run `setup-config setup`, here is the `npm install` command that is run:
+```
+npm i -D babel-eslint eslint eslint-config-airbnb-base eslint-config-prettier eslint-plugin-import eslint-plugin-prettier prettier
+```
+
+When you run the `setup-config setup -p`, here is the `npm install` command that is run:
+```
+npm i -D babel-eslint eslint eslint-config-airbnb-base eslint-plugin-import
 ```
 
 #### Thoughts
